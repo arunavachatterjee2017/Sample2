@@ -26,11 +26,11 @@ public class Demo {
 			
 			driver.findElement(By.id("userName")).sendKeys(str);
 			driver.findElement(By.id("password")).sendKeys("Password1$");
-			
+			Thread.sleep(5000);
 			driver.quit();
 		}
 		catch(Exception e) {
-			System.out.println(e.getMessage());
+			System.out.println(e.getMessage());							
 		}
 	}
 }
